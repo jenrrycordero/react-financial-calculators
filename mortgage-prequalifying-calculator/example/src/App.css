@@ -1,0 +1,391 @@
+
+/**
+ * This file contains Calculator's general style
+ */
+ .mortgage-prequalifying-calculator-wrapper .h2, .mortgage-prequalifying-calculator-wrapper h2 {
+  font-size: 1.7rem;
+}
+
+.mortgage-prequalifying-calculator-wrapper .calculatorTooltip{
+  width: 220px;
+  opacity: 1 !important;
+}
+
+.mortgage-prequalifying-calculator-wrapper .helpMiniDisk{
+  height: 22px;
+  width: 22px;
+  font-size: 17px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  color: white;
+  background-color: #2a353d;
+  box-shadow: none;
+  text-shadow: none;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.mortgage-prequalifying-calculator-wrapper .shadowBox{
+  width: 100%;
+  border: 1px solid #eef2f7;
+  -webkit-box-shadow: 3px 2px 7px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 3px 2px 7px 0 rgba(0,0,0,.15);
+  box-shadow: 3px 2px 7px 0 rgba(0,0,0,.15);
+}
+
+.mortgage-prequalifying-calculator-wrapper .inputError{
+  border: 1px solid #dc3545;
+}
+
+.mortgage-prequalifying-calculator-wrapper .inputErrorText{
+  color: #dc3545;
+}
+
+.mortgage-prequalifying-calculator-wrapper .inputIconError{
+  color: #ffffff;
+  background: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.mortgage-prequalifying-calculator-wrapper .show{
+  display: block;
+}
+.mortgage-prequalifying-calculator-wrapper .hide{
+  display: none;
+}
+
+.mortgage-prequalifying-calculator-wrapper button:disabled,
+.mortgage-prequalifying-calculator-wrapper button[disabled]{
+    border: 1px solid #999999 !important;
+    background-color: #cccccc !important;
+    color: #666666 !important;
+}
+
+.mortgage-prequalifying-calculator-wrapper h4{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mortgage-prequalifying-calculator-wrapper .number-populated{
+  width: 100%;
+  font-size: 1.8em;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 15px 0;
+  margin-bottom: 0.5rem;
+}
+
+.mortgage-prequalifying-calculator-wrapper .tooltipContainer{
+  display: inline-block;
+  position:relative;
+}
+.mortgage-prequalifying-calculator-wrapper .customTooltip{
+  position: absolute;
+  bottom: 135%;
+  left: -18px;
+  min-width: 260px;
+  max-width: 300px;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 15px;
+  z-index: 999;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.mortgage-prequalifying-calculator-wrapper .customTooltip:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 22px;
+  width: 0; height: 0;
+  border-top: 8px solid #222222;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.mortgage-prequalifying-calculator-wrapper .graph-container{
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  padding: 25px 35px 15px;
+}
+
+.loan-term-label-wrap{
+    padding-left: 30px !important;
+}
+.loan-term-label-wrap .tooltipContainer{
+    position: absolute;
+    left: 0;
+}
+
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: relative;
+}
+.centered-absolutely{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 18px;
+    transform: translate(-50%, -50%);
+}
+
+.mpq-line{
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin: 15px 0 20px;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(left,transparent,rgba(0,0,0,.1),transparent);
+    background-image: -moz-linear-gradient(left,transparent,rgba(0,0,0,.1),transparent);
+    background-image: -ms-linear-gradient(left,transparent,rgba(0,0,0,.1),transparent);
+    background-image: -o-linear-gradient(left,transparent,rgba(0,0,0,.1),transparent);
+}
+
+.mpq-solid-line{
+    background-image: none;
+    margin: 15px 0;
+    background-color: #dedede;
+}
+
+.loanIcons{
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+.loanIconsB{
+     width: 80px;
+}
+.loanWarningIcon{
+    margin: 0 auto;
+    display: block;
+}
+.moneyLabelData{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.mpq-H3{
+    color: #267cac;
+    font-size: 1.7rem;
+}
+
+.monthly-label{
+    display: block;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.monthly-label:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.blue-square:before{
+    background: #4f81bc;
+}
+.red-square:before {
+    background: #c0504e;
+}
+.green-square:before{
+    background: #9bbb58;
+}
+.monthly-principal-text{
+    margin-right: 15px;
+}
+.total-monthly-principal-text{
+    margin-right: 15px;
+    color: #010101;
+    font-weight: 600;
+}
+.monthly-input{
+    width: 100%;
+    text-align: right;
+    padding-right: 15px;
+    border: 1px solid lightgray;
+}
+.total-mp-label .monthly-label:before{
+    width: 0;
+}
+.plusIcon, .dolarIcon {
+    position: absolute;
+    font-weight: 300;
+}
+
+.plusIcon{
+    top: 2px;
+    left: -5px;
+}
+
+.dolarIcon {
+    top: 3px;
+    left: -2px;
+    font-size: 18px;
+    color: #999999;
+}
+
+.btn-open-table{
+    position: relative;
+    display: block;
+    color: #267cac;
+    /* margin: 30px auto 0; */
+    /* font-size: 22px; */
+    font-size: 20px;
+    margin-left: -11px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+.btn-open-table i{
+    position: absolute;
+    padding: 5px;
+    margin-top: -2px;
+    margin-left: 15px;
+    display: inline-block;
+    border: solid #267cac;
+    border-width: 0 3px 3px 0;
+}
+.btn-open-table i.up{
+    top: 21px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: all .3s ease-in-out;
+}
+
+.btn-open-table i.down{
+    top: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 500px){
+    .btn-open-table{
+        white-space: normal;
+    }
+
+    .btn-open-table i {
+        position: relative;
+    }
+    .btn-open-table i.down {
+        top: -1px;
+    }
+    .btn-open-table i.up {
+        top: 6px;
+    }
+}
+
+.total-monthly-payment{
+    margin-top: -15px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #010101;
+    font-family: canada-type-gibson,sans-serif;
+}
+
+.chart-wrap{
+    position: relative;
+    margin-top: -50px;
+
+    -webkit-animation: fadeinChart 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinChart 2s; /* Firefox < 16 */
+        -ms-animation: fadeinChart 2s; /* Internet Explorer */
+         -o-animation: fadeinChart 2s; /* Opera < 12.1 */
+            animation: fadeinChart 2s;
+}
+
+@keyframes fadeinChart {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinChart {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinChart {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinChart {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinChart {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-width: 450px){
+    .mortgage-prequalifying-calculator-wrapper h5{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .moneyLabelData {
+        font-size: 19px;
+    }
+    .npl-xs{
+        padding-left: 0;
+    }
+    .loanIcons {
+        width: 60px;
+    }
+    .loanIconsB {
+        width: 70px;
+    }
+    .mpq-H3 {
+        font-size: 24px;
+        margin-bottom: 25px !important;
+    }
+
+    .homeInsurance2{
+        padding-right: 5px;
+    }
+
+    .cus-col-9 {
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    .cus-col-3 {
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
+
+.mortgage-prequalifying-calculator-wrapper .special-tooltip{
+    margin-right: 7px;
+    vertical-align: text-top;
+}
+
+.mortgage-prequalifying-calculator-wrapper .special-tooltip .helpMiniDisk{
+    height: 25px;
+    width: 25px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+    background-color: #255c84;
+}
+
+.mortgage-prequalifying-calculator-wrapper .special-tooltip .customTooltip{
+    font-weight: 400;
+}

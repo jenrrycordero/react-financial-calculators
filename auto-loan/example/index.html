@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="theme-color" content="#000000"/>
+
+  <title>VT Solutions Calculators</title>
+  <link rel="stylesheet" href="https://www.consolidatedcredit.org/wp-content/themes/ccus-ml/dist/bundle.min.css" crossorigin="anonymous">
+  <script src="https://resources.venturetechsolutions.com/calculators/vt-auto-loan/bundle.min.js?v=1.4" type="text/javascript"></script>
+<!--  <script src="dist/bundle.min.js?v=1.7" type="text/javascript"></script>-->
+  <script src="https://unpkg.com/@ungap/url-search-params@0.1.4/min.js" type="text/javascript"></script>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+<div id="CCAutoLoan"></div>
+<script>
+  var searchParams = new URLSearchParams(window.location.href);
+
+  var language = searchParams.get('lan');
+  var region = searchParams.get('region');
+  var btnLabel = searchParams.get('btnLabel');
+
+  VTAutoLoanCalculator .init({
+    selector: 'CCAutoLoan',
+    region: language ? language : 'us',
+    lan: language ? language : 'en',
+    btnLabel: btnLabel ? btnLabel : 'Calculate',
+  });
+
+</script>
+
+</body>
+
+</html>

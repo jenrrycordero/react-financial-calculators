@@ -1,0 +1,47 @@
+
+.bp-input-group .input-group{
+    -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,.06);
+    -moz-box-shadow:    3px 2px 4px 0px rgba(0,0,0,.06);
+         box-shadow:    3px 2px 4px 0px rgba(0,0,0,.06);
+}
+.bp-input-group .input-group .form-control{
+    height: 47px;
+    color: #212529;
+    font-size: 17px;
+    border: 1px solid #ced4da;
+}
+.bp-input-group .input-group input.form-control,
+.bp-input-group .input-group .input-group-prepend .input-group-text{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.bp-input-group .input-group .input-group-prepend .input-group-text{
+    color: #005404;
+    background: #fbfffb;
+    padding: .375rem .95rem;
+}
+.bp-input-group small.small-help{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.bp-input-group small.text-danger{
+    width: 100%;
+    display: none;
+}
+
+.InputGroupError .input-group-prepend .input-group-text{
+    color: #ffffff !important;
+    background: #dc3545 !important;
+    border: 1px solid #dc3545;
+}
+
+.InputGroupError input.form-control{
+    border: 1px solid #dc3545 !important;
+}
+
+.bp-input-group .material-label {
+    font-size: 21px;
+}

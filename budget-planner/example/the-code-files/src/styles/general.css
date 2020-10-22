@@ -1,0 +1,165 @@
+
+/* animation keyframes ------------------------ */
+
+/* fadeIn */
+@-webkit-keyframes fadeIn {
+    0%   { opacity: 0; display: none }
+    100% { opacity: 1; display: block }
+}
+@-moz-keyframes fadeIn {
+    0%   { opacity: 0; display: none }
+    100% { opacity: 1; display: block }
+}
+@-o-keyframes fadeIn {
+    0%   { opacity: 0; display: none }
+    100% { opacity: 1; display: block }
+}
+@keyframes fadeIn {
+    0%   { opacity: 0; display: none }
+    100% { opacity: 1; display: block }
+}
+
+/* fadeOut */
+@-webkit-keyframes fadeOut {
+    0%   { opacity: 1; display: block }
+    100% { opacity: 0; display: none }
+}
+@-moz-keyframes fadeOut {
+    0%   { opacity: 1; display: block }
+    100% { opacity: 0; display: none }
+}
+@-o-keyframes fadeOut {
+    0%   { opacity: 1; display: block }
+    100% { opacity: 0; display: none }
+}
+@keyframes fadeOut {
+    0%   { opacity: 1; display: block }
+    100% { opacity: 0; display: none }
+}
+/* End of Animations --------------------------- */
+
+.budget-planner-wrapper {
+    width: 100%;
+    color: #666666;
+    padding: 50px 0;
+    font-size: 20px;
+    border: 1px solid #cccccc;
+}
+
+@media screen and (max-width: 500px){
+    .budget-planner-wrapper {
+        padding: 0 0 40px;
+    }
+    .budget-planner-wrapper fieldset .mt-5.xs-row-separator{
+        margin-top: .5rem !important;
+    }
+}
+
+.budget-planner-wrapper h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+.budget-planner-wrapper h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #267cac;
+}
+.budget-planner-wrapper fieldset{
+    margin: auto;
+    padding: 0 20px;
+
+    -webkit-animation: fadeOut 1s ease-out;
+    -moz-animation:    fadeOut 1s ease-out;
+    -o-animation:      fadeOut 1s ease-out;
+    animation:         fadeOut 1s ease-out;
+
+    display: none;
+    opacity: 0;
+}
+
+.budget-planner-wrapper fieldset.active{
+    -webkit-animation: fadeIn .9s ease-in-out;
+    -moz-animation:    fadeIn .9s ease-in-out;
+    -o-animation:      fadeIn .9s ease-in-out;
+    animation:         fadeIn .9s ease-in-out;
+
+    display: block;
+    opacity: 1;
+}
+
+.budget-planner-wrapper .step-title {
+    color: #287dad;
+}
+
+
+/* Down Buttons Style */
+.budget-planner-wrapper .btn-previous {
+    border-radius: 0;
+    font-weight: 600;
+    color: #666666;
+    font-size: 1.25rem;
+    margin-right: 20px;
+    letter-spacing: .5px;
+    background: transparent;
+}
+
+.budget-planner-wrapper .f1-buttons {
+    text-align: center;
+    position: relative;
+}
+
+.btn-previous, .btn-next{
+    cursor:pointer;
+}
+
+.btn-next{
+    -webkit-box-shadow: 3px 2px 4px 0px rgba(0,0,0,.06);
+       -moz-box-shadow: 3px 2px 4px 0px rgba(0,0,0,.06);
+            box-shadow: 3px 2px 4px 0px rgba(0,0,0,.06);
+}
+.btn-next:hover{
+    -webkit-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary, .btn-primary:visited {
+    border: 0;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 0;
+    padding: 10px 35px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    background-color: #e8730b;
+    -webkit-transition: background-color .4s ease-out;
+    -moz-transition: background-color .4s ease-out;
+    -ms-transition: background-color .4s ease-out;
+    -o-transition: background-color .4s ease-out;
+    transition: background-color .4s ease-out;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:visited:active, .btn-primary:visited:focus, .btn-primary:visited:hover, .btn-primary:visited:not(:disabled):not(.disabled):active {
+    -webkit-transition: background-color .4s ease-out;
+    -moz-transition: background-color .4s ease-out;
+    -ms-transition: background-color .4s ease-out;
+    -o-transition: background-color .4s ease-out;
+    transition: background-color .4s ease-out;
+    background-color: #287dad;
+    color: #fff;
+    outline: none;
+}
+
+.btn-next:disabled{
+    cursor: not-allowed;
+    background: #989b9c;
+}
+
+
+/* Media Queries Form Here */
+@media only screen and (max-width: 500px){
+    .budget-planner-wrapper { border: none; }
+}
+

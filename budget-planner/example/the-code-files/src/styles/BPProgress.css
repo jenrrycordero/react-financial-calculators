@@ -1,0 +1,171 @@
+/* animation keyframes ------------------------ */
+
+/* fadeIn */
+@-webkit-keyframes activateOn {
+    0% {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        color: #cccccc;
+        background: #ffffff;
+        line-height: 40px;
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        color: #ffffff;
+        background: #287dad;
+        line-height: 48px;
+    }
+}
+@-moz-keyframes activateOn {
+    0% {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        color: #cccccc;
+        background: #ffffff;
+        line-height: 40px;
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        color: #ffffff;
+        background: #287dad;
+        line-height: 48px;
+    }
+}
+@-o-keyframes activateOn {
+    0% {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        color: #cccccc;
+        background: #ffffff;
+        line-height: 40px;
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        color: #ffffff;
+        background: #287dad;
+        line-height: 48px;
+    }
+}
+@keyframes activateOn {
+    0% {
+        color: #cccccc;
+        background: #ffffff;
+    }
+    100% {
+        color: #ffffff;
+        background: #287dad;
+    }
+}
+
+/* End of Animations --------------------------- */
+
+.f1-steps {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 500px) {
+    .f1-steps {
+        display: none;
+    }
+}
+
+.f1-progress {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+}
+
+.f1-progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background: #287dad;
+}
+
+.f1-step {
+    position: relative;
+    float: left;
+    width: 20%;
+    padding: 0 5px;
+}
+    .f1-step p {
+        color: #ccc;
+        font-size: 14px;
+    }
+        .f1-step:not(.active) .f1-step-icon {
+            background: #ccc;
+            color: #fff;
+        }
+
+        .f1-step.activated .f1-step-icon {
+            background: #fff;
+            border: 1px solid #287dad;
+            color: #287dad;
+            line-height: 38px;
+        }
+
+        .f1-step.activated p {
+            color: #287dad;
+        }
+
+        .f1-step.active {
+            cursor: auto;
+        }
+
+
+        .f1-step.active p {
+            color: #287dad;
+        }
+
+        .f1-step-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-top: 4px;
+            background: #ffffff;
+            font-size: 16px;
+            color: #cccccc;
+            line-height: 40px;
+
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+        }
+
+        .f1-step.active .f1-step-icon {
+            -webkit-animation: activateOn .6s ease-in;
+            -moz-animation:    activateOn .6s ease-in;
+            -o-animation:      activateOn .6s ease-in;
+            animation:         activateOn .6s ease-in;
+
+            color: #fff;
+            background: #287dad;
+            width: 48px;
+            height: 48px;
+            margin-top: 0;
+            font-size: 22px;
+            line-height: 48px;
+        }

@@ -1,0 +1,437 @@
+
+@media only screen and (max-width: 767px){
+  #debtResultWrap{
+    margin: 20px;
+  }
+}
+
+.dmp-calc-wrapper form {
+  max-width: 385px;
+}
+.dmp-calc-wrapper form .input-group .form-control {
+  padding: 10px;
+  color: #7f7f7f;
+}
+
+@media only screen and (max-width: 475px) {
+  .dmp-calc-wrapper form{
+    width: auto;
+  }
+  .dmp-calc-wrapper form .dmp-fields{
+    float: none;
+  }
+}
+
+
+.dmp-calc-wrapper form {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.dmp-calc-wrapper form input {
+  margin-left: 0;
+  text-align: left;
+  font-weight: 500;
+  height: 50px;
+}
+.dmp-calc-wrapper form input:before {
+  font-weight: 700;
+  padding-right: 5px;
+  color: #fff;
+  width: 25px;
+  content: "$";
+}
+.dmp-calc-wrapper form .input-group-text{
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0;
+  border: 0;
+}
+.dmp-calc-wrapper form .center-inputs {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.dmp-calc-wrapper form .dmp-fields {
+  max-width: 50%;
+  float: left;
+  padding: 0 5px;
+}
+@media only screen and (max-width: 475px) {
+  .dmp-calc-wrapper form .dmp-fields {
+    max-width: 100%;
+  }
+}
+
+.dmp-calc-wrapper form .error {
+  color: #aa0202;
+  font-size: 11pt;
+  font-weight: 500;
+  background-color: #ffbdbd;
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: -5px;
+}
+.dmp-calc-wrapper form .btn-primary.disabled,
+.dmp-calc-wrapper form .btn-primary:disabled {
+  background-color: #e8730b;
+  cursor: not-allowed;
+}
+#debtResultWrap {
+  display: none;
+  background-color: #fff;
+  margin: 30px;
+}
+@media only screen and (max-width: 576px) {
+  #debtResultWrap {
+    margin: 5px 5px 15px 5px;
+  }
+}
+
+#debtResultWrap .dmp-bg {
+  /* background: url('https://www.consolidatedcredit.org/wp-content/uploads/2017/03/smiling-woman.png') no-repeat 120% 120%; */
+  /* background-position-x: right;
+  background-position-y: bottom;
+  background-size: 25%;*/
+  padding: 15px;
+  border: 4px solid #fff;
+
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 576px) {
+  #debtResultWrap .dmp-bg {
+    background-image: none;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+#debtResultWrap .savings-head {
+  font-size: 66px;
+  color: #267cac;
+  letter-spacing: 1px;
+
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.0;
+}
+
+@media only screen and (max-width: 768px) {
+  #debtResultWrap .savings-head{
+    font-size: 54px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #debtResultWrap .savings-head{
+    font-size: 32px;
+    padding: 15px 0px;
+  }
+}
+
+#debtResultWrap .savings-per-month {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  color: #e8730b;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+@media only screen and (max-width: 576px) {
+  #debtResultWrap .savings-per-month {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #debtResultWrap .per-month{
+    display: block;
+  }
+}
+
+#debtResultWrap .dmp-lead-button {
+    padding: 0 15px 0 30px;
+    display: inline-block;
+}
+
+#debtResultWrap .disclaimer {
+    max-width: 80%;
+  color: #666;
+  font-size: 9pt;
+  padding: 15px 45px 30px 0px;
+  letter-spacing: .5px;
+}
+
+@media only screen and (max-width: 576px) {
+  #debtResultWrap .disclaimer {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #debtResultWrap .disclaimer {
+    padding-right: 0;
+  }
+}
+
+#debtResultWrap p {
+  color: #003c73;
+  font-weight: 500;
+  margin: 10px 0px;
+  font-size: 30px;
+  line-height: 1.0;
+}
+
+@media only screen and (max-width: 576px) {
+  #debtResultWrap p {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+/* animation keyframes ------------------------ */
+
+/* fadeIn */
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; display: none }
+  100% { opacity: 1; display: block }
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; display: none }
+  100% { opacity: 1; display: block }
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; display: none }
+  100% { opacity: 1; display: block }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; display: none }
+  100% { opacity: 1; display: block }
+}
+
+/* fadeOut */
+@-webkit-keyframes fadeOut {
+  0%   { opacity: 1; display: block }
+  100% { opacity: 0; display: none }
+}
+@-moz-keyframes fadeOut {
+  0%   { opacity: 1; display: block }
+  100% { opacity: 0; display: none }
+}
+@-o-keyframes fadeOut {
+  0%   { opacity: 1; display: block }
+  100% { opacity: 0; display: none }
+}
+@keyframes fadeOut {
+  0%   { opacity: 1; display: block }
+  100% { opacity: 0; display: none }
+}
+
+/* lds-ring (Spiner) */
+@-webkit-keyframes lds-ring {
+  0%   { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+@-moz-keyframes lds-ring {
+  0%   { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+@-o-keyframes lds-ring {
+  0%   { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+@keyframes lds-ring {
+  0%   { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+/* End of Animations --------------------------- */
+
+#debtResultWrap{
+  -webkit-animation: fadeOut 1s ease-out;
+  -moz-animation:    fadeOut 1s ease-out;
+  -o-animation:      fadeOut 1s ease-out;
+  animation:         fadeOut 1s ease-out;
+
+  display: none;
+  opacity: 0;
+}
+
+#debtResultWrap.active {
+  -webkit-animation: fadeIn .9s ease-in-out;
+  -moz-animation:    fadeIn .9s ease-in-out;
+  -o-animation:      fadeIn .9s ease-in-out;
+  animation:         fadeIn .9s ease-in-out;
+
+  display: block;
+  opacity: 1;
+}
+
+#debtResultWrap .dmp-nobg{
+  background: none;
+}
+.debt-analyzer-results h3{
+  font-weight: bold;
+  color: #267cac;
+  text-transform: uppercase;
+}
+.debt-analyzer-results .card{
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  border-radius: .25rem;
+}
+.debt-analyzer-results .card small{
+  font-size: 16px;
+}
+
+.debt-analyzer-results .card-results{
+  font-size: 24px;
+}
+
+.debt-analyzer-results .card-results.font-small{
+  font-size: 20px;
+}
+
+.debt-analyzer-results .card-header h4{
+  margin: 0;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.debt-analyzer-results .card-header .font-small{
+  font-size: 18px;
+}
+
+.debt-analyzer-results .card-subheader{
+  padding: .75rem 1.25rem;
+}
+
+.debt-analyzer-results .card-intro{
+  padding: .75rem 1.25rem;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  background: #f4f4f4;
+}
+
+.debt-analyzer-results .card-body{
+  border-top: 1px solid #fff;
+  background: #f4f4f4;
+}
+
+.debt-analyzer-results .card-subheader h5{
+  margin: 0;
+  font-size: 20px;
+}
+
+.debt-analyzer-results .bg-color-blue{
+  background: #287dad;
+}
+
+.debt-analyzer-results .bg-color-lightblue{
+  background: #c4e8f5;
+  color: #0d4e78;
+}
+
+.debt-analyzer-results .bg-color-gray{
+  background: #6d6d6d;
+}
+
+.debt-analyzer-results .bg-color-lightgray h5{
+  color: #ffffff;
+}
+
+.debt-analyzer-results .bg-color-lightgray{
+  background: #b7b7b7;
+  color: #ffffff;
+}
+
+.debt-analyzer-results .shadow {
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 5px 15px rgba(0,0,0,.15);
+          box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.debt-analyzer-results .p10{
+  padding: 10px;
+}
+
+.debt-analyzer-results .narrow-padding{
+  padding: 16px 5px;
+}
+
+#debtResultWrap .disclaimer{
+  max-width: 100%;
+  color: #666;
+  font-size: 9pt;
+  padding: 35px 0 15px;
+  letter-spacing: .5px;
+}
+
+
+/* Spiner Style */
+.loader-spiner-dmp{
+  width: 70px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  color: #ffffff;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* Safari 4+ */
+  -moz-animation:    lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* Fx 5+ */
+  -o-animation:      lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* Opera 12+ */
+  animation:         lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* IE 10+, Fx 29+ */
+
+  border-color: #ffffff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+/* End of Spiner Style */
+
+.bigstrong{
+  font-size: 35px;
+}

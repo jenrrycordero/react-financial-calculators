@@ -1,0 +1,47 @@
+.result-wrapper table thead tr th {
+    border: none;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 10px 10px 10px 13px;
+    border-right: 1px solid #e6e6e6;
+    text-shadow: 0 1px 1px #000;
+}
+
+.result-wrapper h3{
+    font-weight: 600;
+    font-size: 32px;
+    margin: 15px 0 20px;
+}
+
+.result-wrapper h3 i{
+    font-size: 28px;
+    padding: 8px;
+    margin-right: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.result-wrapper .td-amount{
+    width: 160px;
+    text-align: right;
+}
+
+.result-wrapper .cat-table{
+    -webkit-box-shadow: 0 0 8px 4px rgba(0,0,0,.06);
+    -moz-box-shadow:    0 0 8px 4px rgba(0,0,0,.06);
+    box-shadow:         0 0 8px 4px rgba(0,0,0,.06);
+}
+
+.result-wrapper .cat-table tbody tr td label{ padding:0 }
+
+@media only screen and (max-width: 1025px){
+    .btn-print-result{
+        display: none !important;
+    }
+}

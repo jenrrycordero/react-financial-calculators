@@ -1,0 +1,598 @@
+
+/**
+ * This file contains Calculator's general style
+ */
+ .loan-calculator-wrapper .h2, .loan-calculator-wrapper h2 {
+  font-size: 1.7rem;
+}
+
+.loan-calculator-wrapper .calculatorTooltip{
+  width: 220px;
+  opacity: 1 !important;
+}
+
+.loan-calculator-wrapper .helpMiniDisk{
+  height: 22px;
+  width: 22px;
+  font-size: 17px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  color: white;
+  background-color: #2a353d;
+  box-shadow: none;
+  text-shadow: none;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.loan-calculator-wrapper .shadowBox{
+  width: 100%;
+  border: 1px solid #eef2f7;
+  -webkit-box-shadow: 3px 2px 7px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 3px 2px 7px 0 rgba(0,0,0,.15);
+  box-shadow: 3px 2px 7px 0 rgba(0,0,0,.15);
+}
+
+.loan-calculator-wrapper .inputError{
+  border: 1px solid #dc3545;
+}
+
+.loan-calculator-wrapper .inputErrorText{
+  color: #dc3545;
+}
+
+.loan-calculator-wrapper .inputIconError{
+  color: #ffffff;
+  background: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.loan-calculator-wrapper .show{
+  display: block;
+}
+.loan-calculator-wrapper .hide{
+  display: none;
+}
+
+.loan-calculator-wrapper button:disabled,
+.loan-calculator-wrapper button[disabled]{
+    border: 1px solid #999999 !important;
+    background-color: #cccccc !important;
+    color: #666666 !important;
+}
+
+.loan-calculator-wrapper h4{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.loan-calculator-wrapper .fieldset-minimum{
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: .35em .625em .75em;
+  background-color: #ececec;
+  border: 1px solid #e4e4e4;
+}
+
+.loan-calculator-wrapper .number-populated{
+  width: 100%;
+  font-size: 1.8em;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 15px 0;
+  margin-bottom: 0.5rem;
+}
+
+.loan-calculator-wrapper .tooltipContainer{
+  display: inline-block;
+  position:relative;
+}
+.loan-calculator-wrapper .customTooltip{
+  position: absolute;
+  bottom: 135%;
+  left: -18px;
+  min-width: 260px;
+  max-width: 300px;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 15px;
+  z-index: 999;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.loan-calculator-wrapper .customTooltip:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 22px;
+  width: 0; height: 0;
+  border-top: 8px solid #222222;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.loan-calculator-wrapper .graph-container{
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  padding: 25px 35px 15px;
+}
+
+
+.loan-calculator-wrapper #mortgagePaymentResults{
+    display: block;
+    padding: 30px 20px 20px;
+    -webkit-box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    margin-bottom: 100px;
+}
+
+.loan-calculator-wrapper #mortgagePaymentResults .table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+    height: 708px;
+}
+
+.loan-calculator-wrapper #mortgagePaymentResults .table thead{
+  background: #f7f7f7;
+}
+.loan-calculator-wrapper #mortgagePaymentResults .table thead tr th{
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px){
+  .loan-calculator-wrapper #mortgagePaymentResults .table thead tr th,
+  .loan-calculator-wrapper .table-responsive .table tbody tr td {
+      min-width: 125px !important;
+  }
+}
+
+.loan-calculator-wrapper .table-responsive table {
+  margin-bottom: 0;
+}
+
+.loan-calculator-wrapper .table-responsive table tbody {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.loan-calculator-wrapper .table-responsive.underlined-tbody table tbody{
+    border-bottom: 3px solid #267cac;
+    max-height: 285px;
+}
+
+.loan-calculator-wrapper .debtFreeMY{
+  border-top: 1px solid #ededed;
+  width: 75%;
+  margin: 10px auto;
+  font-size: 45px;
+  color: #b81411;
+  border-bottom: 1px solid #ededed;
+}
+
+.loan-calculator-wrapper .cardDidYouKnowContainer{
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  border: 1px solid #ededed;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+.loan-calculator-wrapper .totalToPay{
+  font-size: 37px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.loan-calculator-wrapper .result_p{
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.loan-calculator-wrapper .graphResults{
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  margin: 25px 0 15px;
+  padding: 25px 27px 15px;
+}
+.loan-calculator-wrapper .distance15Pixels {
+  height: 15px;
+}
+
+.loan-calculator-wrapper .leftResultLable, .loan-calculator-wrapper  .rightResultLable{
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+}
+.loan-calculator-wrapper .leftResultLable span, .loan-calculator-wrapper .rightResultLable span{
+  font-weight: bold;
+}
+.loan-calculator-wrapper .leftResultLable{
+  border-right: 1px solid #ededed;
+}
+.loan-calculator-wrapper .leftResultLable span{
+  color: #267cac;
+}
+.loan-calculator-wrapper .rightResultLable span{
+  color: #af2835;
+}
+
+.loan-calculator-wrapper .graphLeftResult, .graphRightResult{
+  color: #ffffff;
+  padding: 6px;
+  display: inline-block;
+  text-align: center;
+  max-width: 90%;
+  min-width: 10%;
+}
+
+.loan-calculator-wrapper .graphLeftResult{
+  background: #267cac;
+}
+.loan-calculator-wrapper .graphRightResult{
+  background: #af2835;
+}
+
+@media screen and (max-width: 450px){
+  .loan-calculator-wrapper .graphResults{
+      padding: 25px 10px 15px;
+  }
+  .loan-calculator-wrapper .graphLeftResult, .loan-calculator-wrapper .graphRightResult{
+      font-size: 12px;
+      font-weight: bold;
+  }
+}
+
+.loan-calculator-wrapper .txt_disclaimer {
+  margin: 15px 10px;
+  font-size: 15px;
+  color: #404040;
+}
+
+.loan-calculator-wrapper .result-anchor{
+  color: #007bff !important;
+  display: block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.react-datepicker-wrapper{
+    width: 100%;
+}
+
+.react-datepicker__close-icon {
+    padding-right: 10px;
+}
+.react-datepicker__close-icon::after {
+    background-color: #1e6a9b;
+    height: 20px;
+    width: 20px;
+    font-size: 14px;
+    vertical-align: initial;
+}
+
+.year-label{
+    display: inline;
+    margin-left: 5px;
+}
+
+.month-label{
+    margin-bottom: 0;
+}
+
+.loan-label{
+    margin-bottom: 3px;
+}
+
+#loan-start-date{
+    padding: 10px;
+}
+
+.loan-titles{
+    color: #267cac;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.results-total h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.end-date-result{
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mp-result{
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+.mp-dolar-sign{
+    position: absolute;
+    top: 8px;
+    color: green;
+    font-size: 30px;
+}
+.mp-dolar-numbers{
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+
+hr.mp-results-line{
+    margin: 5px 0;
+}
+
+.text-black{
+    color: #000000;
+}
+
+.mortgage-form-container{
+    box-shadow: 0 5px 30px rgba(0,0,0,.15);
+    padding: 40px 5px;
+    margin: 20px 0;
+}
+
+.mortgage-form-container .btn-group-toggle .btn {
+    width: 50%;
+}
+
+.loan-btn-go-table{
+    position: relative;
+    display: block;
+    /* width: 290px; */
+    color: #267cac;
+    /* border: 1px solid #ffffff;
+    background-color: #267cac;
+    padding: 10px 40px 10px 10px;*/
+    margin: 30px auto 0;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+.loan-btn-go-table i{
+    position: absolute;
+    padding: 5px;
+    margin-top: -2px;
+    margin-left: 15px;
+    display: inline-block;
+    border: solid #267cac;
+    border-width: 0 3px 3px 0;
+}
+
+.Collapsible i {
+    position: absolute;
+    right: 30px;
+    padding: 5px;
+    display: inline-block;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+}
+
+.loan-btn-go-table i.up,
+.Collapsible i.up {
+    top: 21px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: all .3s ease-in-out;
+}
+.loan-btn-go-table i.up{
+    top: 18px;
+}
+
+.loan-btn-go-table i.down,
+.Collapsible i.down {
+    top: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+}
+.loan-btn-go-table i.down {
+    top: 12px;
+}
+
+.Collapsible {
+    background-color: #ffffff;
+}
+.Collapsible__trigger{
+    position: relative;
+    color: #ffffff;
+    display: inherit;
+    padding: 10px 20px;
+    background-color: #267cac;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.with-extrapayment-text{
+    font-size: 18px;
+    color: #267cac;
+    text-align: right;
+    font-weight: bold;
+    margin: 30px 20px 0;
+}
+
+.Collapsible__contentOuter {
+    overflow: visible;
+    padding: 0 25px 0 35px;
+    border: 1px solid #96e1fa;
+}
+
+.Collapsible__contentOuter.is-open {
+    opacity: 1;
+    /* min-height: 200px; */
+    max-height: 1000px;
+    transition: all 0.4s ease-in-out;
+}
+
+.Collapsible__contentOuter.is-closed {
+    opacity: 0;
+    /* min-height: 0; */
+    max-height: 0;
+    transition: all 0.3s;
+}
+
+.extra-payments-row{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+}
+.extra-payments-row .tooltipContainer {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+.extra-payments-row .input-group{
+    margin-top: 1px;
+}
+
+.extra-payments-row .btn {
+    display: inline-block;
+    white-space: normal;
+}
+
+.extra-fields-label {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.dd-wrapper {
+    width: calc(100% - 5px);
+}
+
+.dd-header {
+    width: 100%;
+}
+
+.dd-header i {
+    right: 5px;
+    border-color: #267cac;
+}
+
+.dd-header i.up {
+    top: 16px;
+}
+
+.dd-header i.down {
+    top: 10px;
+}
+
+.dd-list {
+    position: absolute;
+    overflow: scroll;
+    max-height: 162px;
+    border: 1px solid #96e1fa;
+    z-index: 9999;
+}
+
+.dark-label{
+    color: #000000;
+}
+.trbg-default{
+    background-color: #ffffff;
+}
+.trbg-lblue{
+    background-color: aliceblue !important;
+}
+.trbg-lsky{
+    background-color: #cee8f1 !important;
+}
+.trbg-lgreen{
+    background-color: #ddf9dd !important;
+}
+.trbg-total {
+    position: -webkit-sticky;
+    position: sticky;
+    border-top: 2px solid rgb(167, 168, 175);
+    border-bottom: 2px solid rgb(167, 168, 175);
+    background-color: #f0f0f2!important;
+}
+
+.trbg-total td {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.btn-extra-fields{
+    font-size: 23px;
+    padding: 7px 19px;
+}
+
+.relative-loan-wrapper{
+    position: relative;
+}
+.relative-loan-wrapper h3{
+    margin-left: 30px;
+}
+.relative-loan-wrapper .tooltipContainer{
+    position: absolute;
+    top: 22px;
+}
+
+@media screen and (max-width: 960px){
+    body .loan-calculator-wrapper {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    .mortgage-form-container > .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .p-15{ padding-left: 15px !important; }
+
+    .dd-header {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .loan-calculator-wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .Collapsible__contentOuter {
+        padding: 0 18px 0 25px;
+    }
+    .loan-btn-go-table {
+        margin: 30px 0;
+        font-size: 16px;
+    }
+    .loan-titles{
+        font-size: 28px;
+    }
+    .dd-header {
+        width: 175px;
+    }
+    .btn-extra-fields {
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+}

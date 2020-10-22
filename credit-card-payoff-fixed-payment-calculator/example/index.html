@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000"/>
+
+    <title>VT Solutions Calculators</title>
+    <link rel="stylesheet" href="https://www.consolidatedcredit.org/wp-content/themes/ccus-ml/dist/bundle.min.css" crossorigin="anonymous">
+    <script src="https://resources.venturetechsolutions.com/calculators/vt-credit-card-payoff-fixed-payment-calculator/bundle.min.js?v=2.1" type="text/javascript"></script>
+    <script src="https://unpkg.com/@ungap/url-search-params@0.1.4/min.js" type="text/javascript"></script>
+    <style>
+        #vtcalc .card-header {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+<div id="CCPayOffFixed"></div>
+<script>
+    var searchParams = new URLSearchParams(window.location.href);
+
+    var language = searchParams.get('lan');
+    var title = searchParams.get('title');
+    var btnLabel = searchParams.get('btnLabel');
+
+    var cardContent = "<h2>Did You Know?</h2> <h3>There’s a Better Way to Get Out of Debt</h3> <p>As you can see, minimum payments are not an effective way to get out of debt. They’re costing you time and money that you can't afford to waste.</p> <p>With this amount of debt, you could pay around <strong>*@payments per month</strong> on a debt management program, and you could be out of debt in as little as <strong>@months payments</strong>. Paying a total of <strong>@money</strong> with <strong> @interest </strong> in debt. Call us today at <strong>@phone</strong> for free credit counseling to find a solution that will finally help you become debt free.</p>";
+    if (language == 'es') {
+        btnLabel = "Podemos ayudarle";
+        cardContent = "<h2>¿Sabía Usted Que?</h2> <h3>Hay una mejor manera para liberarse de las deudas</h3> <p>Como puedes ver, realizar pagos mínimos no es una forma efectiva para liberarse de las deudas. Hacer el pago mínimo solo te cuesta tiempo y dinero.</p> <p>Con esta cantidad de deuda, podrías pagar alrededor de <strong>*@payments al mes</strong> en un programa de manejo de deudas y <strong>podrías liberarte de las deudas tan pronto como en 36-60 pagos</strong>. Llámanos hoy al <strong>@phone</strong> para una sesión de consejería de crédito gratis que te ayudará a encontrar una solución que te permita liberarte de las deudas de una vez por todas.</p>";
+    }
+
+    VTCCPayoffFixedPaymentCalculator.init({
+        selector: 'CCPayOffFixed',
+        title: title ? title : 'Credit Card Payoff Calculator - Fixed Payment',
+        lan: language ? language : 'en',
+        showCard: true,
+        cardContent: cardContent,
+        colors: {
+            card_header_BgC: '#f7f7f7',
+            card_header_FontC: '#212121',
+            card_borderC: '#dfdfdf',
+            card_content_BgC: '#ffffff',
+            card_content_FontC: '#000000',
+        },
+        btnLabel: btnLabel ? btnLabel : 'Let us Help You',
+        btnUrl : '#leadForm',
+        openModal: true,
+        phoneNumber : '1-800-320-9929',
+        phoneMessage : 'or call @phone',
+    });
+</script>
+
+</body>
+
+</html>
